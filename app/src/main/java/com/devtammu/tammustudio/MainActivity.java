@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
-    LinearLayout tasbih;
+    LinearLayout tasbih,visibility;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         LinearLayout tasbih = (LinearLayout) findViewById(R.id.tasbih);
+        LinearLayout visibility = (LinearLayout) findViewById(R.id.visibility);
+
+
+
+        ///////// ==  Activity Change Start  == //////////////////
 
         tasbih.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,5 +29,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(beach);
             }
         });
+
+        visibility.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent beach = new  Intent(MainActivity.this, VisibilityActivity.class);
+                startActivity(beach);
+            }
+        });
+
+        ///////// ==  Activity Change End  == //////////////////
+
     }
 }
