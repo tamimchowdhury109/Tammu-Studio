@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,6 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Tasbih"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:gravity="center"/>
@@ -65,6 +67,7 @@
                 android:layout_height="match_parent"
                 android:text="Visibility/Toast"
                 android:textSize="13sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:gravity="center"/>
 
@@ -89,11 +92,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:text="Tasbih"
+                android:textColor="@color/black"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:gravity="center"/>
-
+                android:textStyle="bold" />
 
 
         </LinearLayout>
