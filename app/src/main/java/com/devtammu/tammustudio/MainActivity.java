@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
-    LinearLayout tasbih,visibility;
+    LinearLayout tasbih,visibility,WebView,webViewMulti,relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayout tasbih = (LinearLayout) findViewById(R.id.tasbih);
         LinearLayout visibility = (LinearLayout) findViewById(R.id.visibility);
+        LinearLayout WebView = (LinearLayout) findViewById(R.id.WebView);
+        LinearLayout webViewMulti = (LinearLayout) findViewById(R.id.webViewMulti);
+        LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.relativeLayout);
 
 
 
@@ -25,18 +28,43 @@ public class MainActivity extends AppCompatActivity {
         tasbih.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent beach = new  Intent(MainActivity.this, TasbihActivity.class);
-                startActivity(beach);
+                Intent myIntent = new  Intent(MainActivity.this, TasbihActivity.class);
+                startActivity(myIntent);
             }
         });
 
         visibility.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent beach = new  Intent(MainActivity.this, VisibilityActivity.class);
-                startActivity(beach);
+                Intent myIntent = new  Intent(MainActivity.this, VisibilityActivity.class);
+                startActivity(myIntent);
             }
         });
+
+        WebView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, WebViewActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        webViewMulti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, WebViewMultiActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, RelativeActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
 
         ///////// ==  Activity Change End  == //////////////////
 
