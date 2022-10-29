@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
-    LinearLayout tasbih,visibility,WebView,webViewMulti,relativeLayout;
+    LinearLayout tasbih,visibility,WebView,webViewMulti,relativeLayout,animation,picasso,lottie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout WebView = (LinearLayout) findViewById(R.id.WebView);
         LinearLayout webViewMulti = (LinearLayout) findViewById(R.id.webViewMulti);
         LinearLayout relativeLayout = (LinearLayout) findViewById(R.id.relativeLayout);
+        LinearLayout animation = (LinearLayout) findViewById(R.id.animation);
+        LinearLayout picasso = (LinearLayout) findViewById(R.id.picasso);
+        LinearLayout lottie = (LinearLayout) findViewById(R.id.lottie);
 
 
 
@@ -64,6 +67,31 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+
+        animation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, AnimationActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        picasso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, PicassoActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        lottie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, LottieActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
 
 
         ///////// ==  Activity Change End  == //////////////////

@@ -7,7 +7,7 @@ import android.webkit.WebView;
 
 public class WebViewActivity extends AppCompatActivity {
     WebView webView;
-    public static String webUrl = "";
+    public static String webUrl = "http://172.20.254.6/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

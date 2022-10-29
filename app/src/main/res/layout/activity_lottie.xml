@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LottieActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_url="https://assets1.lottiefiles.com/packages/lf20_otwkmzu4.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/lottieButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Online Lottie" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottiView"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/lottie"
+            app:lottie_loop="true"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

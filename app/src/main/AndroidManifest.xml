@@ -17,6 +17,15 @@
         android:theme="@style/Theme.TammuStudio"
         tools:targetApi="31">
         <activity
+            android:name=".LottieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PicassoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnimationActivity"
+            android:exported="false" />
+        <activity
             android:name=".RelativeActivity"
             android:exported="false" />
         <activity
