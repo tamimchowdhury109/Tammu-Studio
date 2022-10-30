@@ -280,6 +280,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/admob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -290,14 +291,14 @@
             <ImageView
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:src="@drawable/animation"
+                android:src="@drawable/admob"
                 android:scaleType="centerCrop"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Animation"
+                android:text="Admob"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 android:textStyle="bold" />

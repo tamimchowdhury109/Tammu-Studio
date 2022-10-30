@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
-    LinearLayout tasbih,visibility,WebView,webViewMulti,relativeLayout,animation,picasso,lottie;
+    LinearLayout tasbih,visibility,WebView,webViewMulti,relativeLayout,animation,picasso,lottie,admob;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout animation = (LinearLayout) findViewById(R.id.animation);
         LinearLayout picasso = (LinearLayout) findViewById(R.id.picasso);
         LinearLayout lottie = (LinearLayout) findViewById(R.id.lottie);
+        LinearLayout admob = (LinearLayout) findViewById(R.id.admob);
 
 
 
@@ -91,6 +92,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+
+        admob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivity.this, AdmobActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
 
 
 
