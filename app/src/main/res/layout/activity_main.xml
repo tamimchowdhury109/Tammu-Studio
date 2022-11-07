@@ -313,4 +313,14 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/season2"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Season 2"
+        android:textSize="30sp"
+        android:backgroundTint="@color/purple_200"
+        android:padding="10dp"/>
+
 </LinearLayout>
