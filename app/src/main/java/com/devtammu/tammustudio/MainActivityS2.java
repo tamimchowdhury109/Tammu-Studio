@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 
 public class MainActivityS2 extends AppCompatActivity {
 
-    LinearLayout cls203,cls204;
+    LinearLayout cls203,cls204,cls207;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class MainActivityS2 extends AppCompatActivity {
 
         LinearLayout cls203 = (LinearLayout) findViewById(R.id.cls203);
         LinearLayout cls204 = (LinearLayout) findViewById(R.id.cls204);
+        LinearLayout cls207 = (LinearLayout) findViewById(R.id.cls207);
 
 
         cls203.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +33,14 @@ public class MainActivityS2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivityS2.this, Class204Activity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        cls207.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivityS2.this, Class207Activity.class);
                 startActivity(myIntent);
             }
         });

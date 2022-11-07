@@ -76,7 +76,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/WebView"
+            android:id="@+id/cls207"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -93,7 +93,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Class 205"
+                android:text="Class 207"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
