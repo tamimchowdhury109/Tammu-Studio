@@ -1,5 +1,6 @@
 package com.devtammu.tammustudio;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -18,6 +19,13 @@ public class Class204Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class204);
+
+        getSupportActionBar().setTitle("Profit - Percentage (Class 204)");
+//        getSupportActionBar().setSubtitle("Tammu");
+        // calling the action bar
+        ActionBar actionBar = getSupportActionBar();
+        // showing the back button in action bar
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         edBuy = findViewById(R.id.edBuy);
         edSell = findViewById(R.id.edSell);
