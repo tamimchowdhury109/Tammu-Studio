@@ -87,11 +87,15 @@ public class Class207Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                float fCelsius = Float.parseFloat(edCelsius.getText().toString());
+                if (edCelsius.length() > 0){
+                    float fCelsius = Float.parseFloat(edCelsius.getText().toString());
 
-                float Celsius = (float) (fCelsius*1.8000+32.00);
+                    float Celsius = (float) (fCelsius*1.8000+32.00);
 
-                farenDisplay.setText("Fahrenheit: "+Celsius+"°F");
+                    farenDisplay.setText("Fahrenheit: "+Celsius+"°F");
+                }else {
+                    edCelsius.setError("Please input a Number");
+                }
 
             }
         });
@@ -99,10 +103,16 @@ public class Class207Activity extends AppCompatActivity {
         CelsiusshowInput.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float ffahrenheit = Float.parseFloat(edFahrenheit.getText().toString());
-                float Fahrenheit = (float) ((ffahrenheit-32)/1.8000);
 
-                celsiusDisplay.setText("Celsius: "+Fahrenheit+"°C");
+               if (edFahrenheit.length() > 0){
+
+                   float ffahrenheit = Float.parseFloat(edFahrenheit.getText().toString());
+                   float Fahrenheit = (float) ((ffahrenheit-32)/1.8000);
+
+                   celsiusDisplay.setText("Celsius: "+Fahrenheit+"°C");
+               }else {
+                   edFahrenheit.setError("Please input a Number");
+               }
             }
         });
 

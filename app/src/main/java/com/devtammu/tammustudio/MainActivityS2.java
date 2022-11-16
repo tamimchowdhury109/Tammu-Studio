@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 
 public class MainActivityS2 extends AppCompatActivity {
 
-    LinearLayout cls203,cls204,cls207,cls210;
+    LinearLayout cls203,cls204,cls207,cls210,cls214,cls218;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,8 @@ public class MainActivityS2 extends AppCompatActivity {
         LinearLayout cls204 = (LinearLayout) findViewById(R.id.cls204);
         LinearLayout cls207 = (LinearLayout) findViewById(R.id.cls207);
         LinearLayout cls210 = (LinearLayout) findViewById(R.id.cls210);
+        LinearLayout cls214 = (LinearLayout) findViewById(R.id.cls214);
+        LinearLayout cls218 = (LinearLayout) findViewById(R.id.cls218);
 
 
         cls203.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +60,22 @@ public class MainActivityS2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainActivityS2.this, Class210Activity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        cls214.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivityS2.this,Class214Activity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        cls218.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainActivityS2.this,Class218Activity.class);
                 startActivity(myIntent);
             }
         });

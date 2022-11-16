@@ -148,7 +148,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/cls20444444444"
+            android:id="@+id/cls214"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -167,7 +167,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Class 204"
+                android:text="Class 214"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -178,7 +178,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/cls207000000"
+            android:id="@+id/cls218"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -195,7 +195,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Class 207"
+                android:text="Class 218"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"

@@ -44,7 +44,7 @@ public class WebViewMultiActivity extends AppCompatActivity {
         dailystar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                WebViewActivity.webUrl = "www.whoer.net";
+                WebViewActivity.webUrl = "https://tv.beinmatch.onl/p/ssc-sports-2.html";
                 Intent myIntent = new Intent(WebViewMultiActivity.this,WebViewActivity.class);
                 startActivity(myIntent);
             }
